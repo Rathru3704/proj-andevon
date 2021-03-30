@@ -444,6 +444,10 @@ p {
     -ms-transform: rotate(-130deg);
     -o-transform: rotate(-130deg);
     transform: rotate(-130deg); } }
+
+.hidden {
+  visibility: hidden;
+}
 /*===========================
     2.HEADER css 
 ===========================*/
@@ -784,6 +788,11 @@ p {
           background-color: #754ef9;
           border-color: #754ef9; }
 
+.andevon-title {
+  display: inline; 
+  vertical-align: middle;
+}
+          
 /*===========================
         3.ABOUT css 
 ===========================*/
