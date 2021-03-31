@@ -585,10 +585,9 @@ p {
   width: 100%;
   margin-top: 90px;
   position: relative;
-  overflow: hidden;
   background-color: #fbfbfb;
-  background-image: url('../images/call-to-action.jpg'); 
-  background-repeat: no-repeat;
+  background: url('../images/call-to-action.jpg') no-repeat right center;
+
   background-size: cover;
   background-color: #C09F80;
   }
@@ -598,10 +597,21 @@ p {
   
   @media only screen and (min-width: 768px) and (max-width: 991px) {
     .header-content {
-      height: 550px; } }
+      height: 550px;
+    }    
+    .fb_iframe_widget iframe{
+      display: none;
+    }
+  }
   @media (max-width: 767px) {
     .header-content {
-      height: 550px; } }
+      height: 550px;
+      text-align: center;
+    } 
+    .fb_iframe_widget iframe{
+      display: none;
+    }
+  }
   .header-content .header-shape {
     position: absolute !important; }
     .header-content .header-shape.shape-one {
@@ -785,6 +795,8 @@ p {
   display: inline; 
   vertical-align: middle;
 }
+
+
           
 /*===========================
         3.ABOUT css 
