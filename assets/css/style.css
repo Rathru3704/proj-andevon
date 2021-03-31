@@ -587,7 +587,6 @@ p {
   position: relative;
   background-color: #fbfbfb;
   background: url('../images/call-to-action.jpg') no-repeat right center;
-
   background-size: cover;
   background-color: #C09F80;
   }
@@ -612,106 +611,6 @@ p {
       display: none;
     }
   }
-  .header-content .header-shape {
-    position: absolute !important; }
-    .header-content .header-shape.shape-one {
-      top: 0 !important;
-      left: 0 !important; }
-      @media (max-width: 767px) {
-        .header-content .header-shape.shape-one img {
-          width: 40px; } }
-    .header-content .header-shape.shape-tow {
-      top: -18px !important;
-      left: 20% !important; }
-      @media (max-width: 767px) {
-        .header-content .header-shape.shape-tow img {
-          width: 40px; } }
-    .header-content .header-shape.shape-three {
-      top: 0 !important;
-      left: 40% !important; }
-      @media (max-width: 767px) {
-        .header-content .header-shape.shape-three img {
-          width: 100px; } }
-    .header-content .header-shape.shape-fore {
-      top: 28px !important;
-      right: 7.6% !important;
-      left: auto !important; }
-      @media (max-width: 767px) {
-        .header-content .header-shape.shape-fore img {
-          width: 40px; } }
-    .header-content .header-shape.shape-five {
-      right: 30px !important;
-      bottom: 35% !important;
-      left: auto !important;
-      top: auto !important; }
-      @media (max-width: 767px) {
-        .header-content .header-shape.shape-five {
-          right: 20px !important;
-          bottom: 48% !important; } }
-      @media (max-width: 767px) {
-        .header-content .header-shape.shape-five img {
-          width: 40px; } }
-    .header-content .header-shape.shape-six {
-      top: 44% !important;
-      left: 13% !important;
-      -webkit-transform: translateY(-50%);
-      -moz-transform: translateY(-50%);
-      -ms-transform: translateY(-50%);
-      -o-transform: translateY(-50%);
-      transform: translateY(-50%); }
-      @media (max-width: 767px) {
-        .header-content .header-shape.shape-six img {
-          width: 40px; } }
-    .header-content .header-shape.shape-seven {
-      left: 30px !important;
-      bottom: 50px !important;
-      top: auto !important; }
-      @media (max-width: 767px) {
-        .header-content .header-shape.shape-seven {
-          left: 15px !important;
-          bottom: 25px !important; } }
-      @media (max-width: 767px) {
-        .header-content .header-shape.shape-seven img {
-          width: 100px; } }
-    .header-content .header-shape.shape-eight {
-      left: 90px !important;
-      bottom: 140px !important;
-      top: auto !important; }
-      @media (max-width: 767px) {
-        .header-content .header-shape.shape-eight {
-          left: 50px !important;
-          bottom: 70px !important; } }
-      @media (max-width: 767px) {
-        .header-content .header-shape.shape-eight img {
-          width: 100px; } }
-    .header-content .header-shape.shape-nine {
-      left: 50% !important;
-      -webkit-transform: translateX(-50%);
-      -moz-transform: translateX(-50%);
-      -ms-transform: translateX(-50%);
-      -o-transform: translateX(-50%);
-      transform: translateX(-50%);
-      bottom: 28px !important;
-      top: auto !important; }
-      @media (max-width: 767px) {
-        .header-content .header-shape.shape-nine {
-          left: 65% !important;
-          bottom: 20px !important; } }
-      @media (max-width: 767px) {
-        .header-content .header-shape.shape-nine img {
-          width: 100px; } }
-    .header-content .header-shape.shape-ten {
-      right: 30px !important;
-      bottom: 5px !important;
-      left: auto !important;
-      top: auto !important; }
-      @media (max-width: 767px) {
-        .header-content .header-shape.shape-ten {
-          right: 0px !important;
-          bottom: 140px !important; } }
-      @media (max-width: 767px) {
-        .header-content .header-shape.shape-ten img {
-          width: 100px; } }
 
 .header-content-right {
   position: relative; }
@@ -745,6 +644,15 @@ p {
 .fb_iframe_widget iframe{
   border-radius: 5px !important;
   box-shadow: 3px 3px 3px black;
+  margin-top: 30vh;
+  margin-left: 8vw;
+  /* transition: opacity 0.2s linear;
+  opacity: 70%; */
+  z-index: 5;
+}
+.fb_iframe_widget:hover iframe{
+  /* transition: opacity 0.2s linear;
+  opacity: 100%; */
 }
 
 .header-social {
