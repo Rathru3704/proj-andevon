@@ -451,6 +451,16 @@ p {
 /*===========================
     2.HEADER css 
 ===========================*/
+
+.header-content {
+  background-image: url('../images/call-to-action.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.header-content .title{
+  color: white;
+}
+
 .navigation {
   -webkit-box-shadow: 0px 0px 29px 0px rgba(134, 134, 134, 0.25);
   -moz-box-shadow: 0px 0px 29px 0px rgba(134, 134, 134, 0.25);
@@ -714,10 +724,15 @@ p {
     padding-bottom: 40px; }
 
 .header-image {
-  max-width: 430px;
+  max-width: 630px;
   margin: 0 auto;
-  position: relative; }
-  .header-image::before {
+  height: 80vh;
+  position: relative; 
+  background-image: url('../images/ceo.jpg');
+  background-repeat: no-repeat;
+  background-size: cover; 
+}
+  /* .header-image::before {
     position: absolute;
     content: '';
     width: 100%;
@@ -742,7 +757,7 @@ p {
     z-index: 11; }
   .header-image img {
     position: relative;
-    z-index: 5; }
+    z-index: 5; } */
 
 .header-social {
   position: absolute;
