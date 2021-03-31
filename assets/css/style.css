@@ -1076,7 +1076,15 @@ p {
       -o-transform: translateX(0);
       transform: translateX(0);
       opacity: 1; }
-
+    
+    .single-work {
+      border-left: 0px solid grey;
+      transition: border-width 0.3s linear;
+    }
+      .single-work:hover {
+      border-left: 8px solid grey;
+      transition: border-width 0.3s linear;
+    }
 /*===========================
        6.PRICING css 
 ===========================*/
