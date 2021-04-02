@@ -1225,7 +1225,7 @@ p.form-message.success, p.form-message.error {
        9.FOOTER css 
 ===========================*/
 .footer-widget {
-  background-color: #152136; }
+  background-color: var(--lightblack); }
   @media only screen and (min-width: 768px) and (max-width: 991px) {
     .footer-widget {
       padding-top: 100px;
@@ -1253,8 +1253,8 @@ p.form-message.success, p.form-message.error {
       line-height: 74px;
       text-align: center;
       border-radius: 50%;
-      color: #bebebe;
-      background-color: #1c2940;
+      color: var(--grey);
+      background-color: var(--white);
       -webkit-transition: all 0.3s ease-out 0s;
       -moz-transition: all 0.3s ease-out 0s;
       -ms-transition: all 0.3s ease-out 0s;
@@ -1267,7 +1267,7 @@ p.form-message.success, p.form-message.error {
           line-height: 50px;
           font-size: 20px; } }
       .footer-content ul li a:hover {
-        background-color: #754ef9;
+        background-color: var(--blue);
         color: #fff; }
 
 .footer-copyright {
@@ -1297,8 +1297,8 @@ p.form-message.success, p.form-message.error {
   display: none; }
   .back-to-top:hover {
     color: #fff;
-    background-color: #754ef9;
-    border-color: #754ef9; }
+    background-color: var(--lightblue);
+    border-color: var(--lightblue); }
 
 /*===========================
       10.PAGE BANNER css 
