@@ -1036,10 +1036,9 @@ p.form-message.success, p.form-message.error {
         background-color: var(--blue);
         color: #fff; }
 
-.footer-copyright {
-  background-color: #1c2940; }
-  .footer-copyright .copyright-text p {
-    color: #fff; }
+  .copyright-text p {
+    color: #fff !important; 
+  }
 
 .back-to-top {
   font-size: 20px;
