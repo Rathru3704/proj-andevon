@@ -104,7 +104,7 @@ p {
   font-size: 16px;
   font-weight: 400;
   line-height: 28px;
-  color: #8a8fa3;
+  color: var(--black);
   margin: 0px; }
   @media (max-width: 767px) {
     p {
@@ -762,8 +762,9 @@ p {
     padding-bottom: 80px; } }
 
 .single-service {
-  background-color: var(--darkpink);
-  border: 1px solid #eceff8;
+  background-color: var(--brown);
+  background-image: linear-gradient(to left top, #c09f80, #bd9b7a, #bb9675, #b8926f, #b58e6a);
+  border: 1px solid var(--darkdarkbrown);
   border-radius: 5px;
   padding: 25px;
   -webkit-transition: all 0.3s ease-out 0s;
@@ -774,6 +775,9 @@ p {
   @media (max-width: 767px) {
     .single-service {
       padding: 15px; } }
+      .single-service p {
+        color: var(--black);
+      }
   .single-service .service-icon i {
     font-size: 60px;
     color: var(--darkdarkblue);
@@ -791,8 +795,9 @@ p {
       -o-transition: all 0.3s ease-out 0s;
       transition: all 0.3s ease-out 0s; }
       .single-service .service-content .service-title a:hover {
-        color: #754ef9; }
+        color: var(--darkdarkblue); }
   .single-service:hover {
+    background-color: var(--darkbrown);
     -webkit-box-shadow: 0px 0px 21px 0px rgba(152, 152, 152, 0.23);
     -moz-box-shadow: 0px 0px 21px 0px rgba(152, 152, 152, 0.23);
     box-shadow: 0px 0px 21px 0px rgba(152, 152, 152, 0.23); }
@@ -871,263 +876,20 @@ p {
     padding-bottom: 80px; } }
 
 .single-work {
-  position: relative; }
+  position: relative; 
+}
   .single-work .work-image img {
     width: 100%; }
-  .single-work .work-overlay {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background-color: rgba(117, 78, 249, 0.8);
-    opacity: 0;
-    visibility: hidden;
-    -webkit-transition: all 0.3s ease-out 0s;
-    -moz-transition: all 0.3s ease-out 0s;
-    -ms-transition: all 0.3s ease-out 0s;
-    -o-transition: all 0.3s ease-out 0s;
-    transition: all 0.3s ease-out 0s; }
-    .single-work .work-overlay .work-content {
-      position: absolute;
-      top: 50%;
-      left: 0;
-      width: 100%;
-      -webkit-transform: translateY(-50%);
-      -moz-transform: translateY(-50%);
-      -ms-transform: translateY(-50%);
-      -o-transform: translateY(-50%);
-      transform: translateY(-50%); }
-      .single-work .work-overlay .work-content .work-title {
-        font-size: 22px;
-        color: #fff;
-        font-weight: 60;
-        -webkit-transform: translateY(-100%);
-        -moz-transform: translateY(-100%);
-        -ms-transform: translateY(-100%);
-        -o-transform: translateY(-100%);
-        transform: translateY(-100%);
-        margin-bottom: 15px;
-        -webkit-transition: all 0.3s ease-out 0s;
-        -moz-transition: all 0.3s ease-out 0s;
-        -ms-transition: all 0.3s ease-out 0s;
-        -o-transition: all 0.3s ease-out 0s;
-        transition: all 0.3s ease-out 0s;
-        opacity: 0; }
-      .single-work .work-overlay .work-content ul {
-        position: relative;
-        padding-top: 20px; }
-        .single-work .work-overlay .work-content ul::before {
-          position: absolute;
-          content: '';
-          width: 60px;
-          height: 2px;
-          background-color: #fff;
-          left: 50%;
-          -webkit-transform: translateX(-50%);
-          -moz-transform: translateX(-50%);
-          -ms-transform: translateX(-50%);
-          -o-transform: translateX(-50%);
-          transform: translateX(-50%);
-          top: 0; }
-        .single-work .work-overlay .work-content ul li {
-          display: inline-block;
-          margin: 0 15px;
-          -webkit-transition: all 0.3s ease-out 0s;
-          -moz-transition: all 0.3s ease-out 0s;
-          -ms-transition: all 0.3s ease-out 0s;
-          -o-transition: all 0.3s ease-out 0s;
-          transition: all 0.3s ease-out 0s;
-          opacity: 0; }
-          .single-work .work-overlay .work-content ul li a {
-            width: 50px;
-            height: 50px;
-            line-height: 50px;
-            font-size: 25px;
-            color: #fff;
-            border-radius: 50%;
-            border: 1px solid #fff;
-            text-align: center;
-            -webkit-transition: all 0.3s ease-out 0s;
-            -moz-transition: all 0.3s ease-out 0s;
-            -ms-transition: all 0.3s ease-out 0s;
-            -o-transition: all 0.3s ease-out 0s;
-            transition: all 0.3s ease-out 0s; }
-            .single-work .work-overlay .work-content ul li a:hover {
-              background-color: #fff;
-              color: #754ef9; }
-          .single-work .work-overlay .work-content ul li:nth-of-type(1) {
-            -webkit-transform: translateX(-100%);
-            -moz-transform: translateX(-100%);
-            -ms-transform: translateX(-100%);
-            -o-transform: translateX(-100%);
-            transform: translateX(-100%); }
-          .single-work .work-overlay .work-content ul li:nth-of-type(2) {
-            -webkit-transform: translateX(100%);
-            -moz-transform: translateX(100%);
-            -ms-transform: translateX(100%);
-            -o-transform: translateX(100%);
-            transform: translateX(100%); }
-  .single-work:hover .work-overlay {
-    opacity: 1;
-    visibility: visible; }
-    .single-work:hover .work-overlay .work-content .work-title {
-      -webkit-transform: translateY(0);
-      -moz-transform: translateY(0);
-      -ms-transform: translateY(0);
-      -o-transform: translateY(0);
-      transform: translateY(0);
-      opacity: 1; }
-    .single-work:hover .work-overlay .work-content ul li {
-      -webkit-transform: translateX(0);
-      -moz-transform: translateX(0);
-      -ms-transform: translateX(0);
-      -o-transform: translateX(0);
-      transform: translateX(0);
-      opacity: 1; }
-    
+  
     .single-work {
-      border-left: 0px solid grey;
+      border-left: 0px solid var(--darkdarkpink);
       transition: border-width 0.3s linear;
     }
       .single-work:hover {
-      border-left: 8px solid grey;
+      border-left: 8px solid var(--darkdarkpink);
       transition: border-width 0.3s linear;
     }
-/*===========================
-       6.PRICING css 
-===========================*/
-@media only screen and (min-width: 768px) and (max-width: 991px) {
-  .pricing-area {
-    padding-top: 90px;
-    padding-bottom: 100px; } }
-@media (max-width: 767px) {
-  .pricing-area {
-    padding-top: 70px;
-    padding-bottom: 80px; } }
 
-.single-pricing .pricing-package {
-  background-color: #754ef9;
-  border-top-left-radius: 5px;
-  border-top-right-radius: 5px; }
-  .single-pricing .pricing-package .package-title {
-    font-size: 22px;
-    color: #fff;
-    padding: 25px; }
-.single-pricing .pricing-body {
-  border: 1px solid #ddd;
-  border-bottom-left-radius: 5px;
-  border-bottom-right-radius: 5px; }
-  .single-pricing .pricing-body .pricing-text {
-    border-bottom: 1px solid #ddd;
-    padding: 20px 25px; }
-    .single-pricing .pricing-body .pricing-text .price {
-      font-size: 30px;
-      font-weight: 600;
-      color: #754ef9;
-      padding-top: 15px; }
-  .single-pricing .pricing-body .pricing-list {
-    padding-top: 30px; }
-    .single-pricing .pricing-body .pricing-list ul li {
-      line-height: 36px;
-      color: #32333c;
-      font-size: 16px; }
-  .single-pricing .pricing-body .pricing-btn {
-    padding-top: 25px;
-    padding-bottom: 40px; }
-    .single-pricing .pricing-body .pricing-btn .main-btn {
-      background-color: #fff;
-      color: #754ef9; }
-      .single-pricing .pricing-body .pricing-btn .main-btn:hover {
-        background-color: #754ef9;
-        color: #fff; }
-.single-pricing.active {
-  -webkit-box-shadow: 0px 0px 21px 0px rgba(152, 152, 152, 0.23);
-  -moz-box-shadow: 0px 0px 21px 0px rgba(152, 152, 152, 0.23);
-  box-shadow: 0px 0px 21px 0px rgba(152, 152, 152, 0.23); }
-  .single-pricing.active .pricing-body .pricing-btn .main-btn {
-    background-color: #754ef9;
-    color: #fff; }
-    .single-pricing.active .pricing-body .pricing-btn .main-btn:hover {
-      background-color: #fff;
-      color: #754ef9; }
-
-/*===========================
-       7.BLOG css 
-===========================*/
-@media only screen and (min-width: 768px) and (max-width: 991px) {
-  .blog-area {
-    padding-top: 90px;
-    padding-bottom: 100px; } }
-@media (max-width: 767px) {
-  .blog-area {
-    padding-top: 70px;
-    padding-bottom: 80px; } }
-
-.single-blog {
-  -webkit-box-shadow: 0px 0px 15px 0px rgba(152, 152, 152, 0.25);
-  -moz-box-shadow: 0px 0px 15px 0px rgba(152, 152, 152, 0.25);
-  box-shadow: 0px 0px 15px 0px rgba(152, 152, 152, 0.25);
-  position: relative;
-  border-radius: 5px;
-  overflow: hidden; }
-  .single-blog .blog-image {
-    overflow: hidden; }
-    .single-blog .blog-image img {
-      width: 100%;
-      -webkit-transition: all 0.3s ease-out 0s;
-      -moz-transition: all 0.3s ease-out 0s;
-      -ms-transition: all 0.3s ease-out 0s;
-      -o-transition: all 0.3s ease-out 0s;
-      transition: all 0.3s ease-out 0s; }
-  .single-blog .blog-content {
-    width: 75%;
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    background-color: #fff;
-    padding: 25px;
-    -webkit-transition: all 0.3s ease-out 0s;
-    -moz-transition: all 0.3s ease-out 0s;
-    -ms-transition: all 0.3s ease-out 0s;
-    -o-transition: all 0.3s ease-out 0s;
-    transition: all 0.3s ease-out 0s; }
-    @media (max-width: 767px) {
-      .single-blog .blog-content {
-        padding: 20px; } }
-    .single-blog .blog-content .blog-title a {
-      font-size: 22px;
-      font-weight: 600;
-      padding-bottom: 5px;
-      -webkit-transition: all 0.3s ease-out 0s;
-      -moz-transition: all 0.3s ease-out 0s;
-      -ms-transition: all 0.3s ease-out 0s;
-      -o-transition: all 0.3s ease-out 0s;
-      transition: all 0.3s ease-out 0s;
-      color: #32333c; }
-      @media (max-width: 767px) {
-        .single-blog .blog-content .blog-title a {
-          font-size: 18px; } }
-    .single-blog .blog-content span {
-      font-size: 16px;
-      color: #8a8fa3;
-      -webkit-transition: all 0.3s ease-out 0s;
-      -moz-transition: all 0.3s ease-out 0s;
-      -ms-transition: all 0.3s ease-out 0s;
-      -o-transition: all 0.3s ease-out 0s;
-      transition: all 0.3s ease-out 0s; }
-  .single-blog:hover .blog-image img {
-    -webkit-transform: scale(1.2);
-    -moz-transform: scale(1.2);
-    -ms-transform: scale(1.2);
-    -o-transform: scale(1.2);
-    transform: scale(1.2); }
-  .single-blog:hover .blog-content {
-    background-color: #754ef9; }
-    .single-blog:hover .blog-content .blog-title a {
-      color: #fff; }
-    .single-blog:hover .blog-content span {
-      color: #fff; }
 
 /*===========================
        8.CONTACT css 
@@ -1145,8 +907,9 @@ p {
     padding-bottom: 80px; } }
 
 .contact-box {
-  background-color: #fff;
-  border: 1px solid #ddd;
+  background-color: var(--brown);
+  background-image: linear-gradient(to left top, #c09f80, #bd9b7a, #bb9675, #b8926f, #b58e6a);
+  border: 1px solid var(--darkdarkbrown);
   padding: 30px 35px;
   -webkit-transition: all 0.3s ease-out 0s;
   -moz-transition: all 0.3s ease-out 0s;
@@ -1159,6 +922,9 @@ p {
   @media (max-width: 767px) {
     .contact-box {
       padding: 30px 25px; } }
+      .contact-box p {
+        color: var(--black);
+      }
   .contact-box .contact-icon i {
     font-size: 48px;
     color: var(--darkdarkblue); }
