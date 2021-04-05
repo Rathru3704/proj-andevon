@@ -697,6 +697,7 @@ p {
 
 .andevon-sub-title {
   color: var(--darkblue);
+  text-align: right;
 }
 
 
@@ -784,6 +785,15 @@ p {
   -o-transition: all 0.3s ease-out 0s;
   transition: all 0.3s ease-out 0s; 
 }
+
+.service-content {
+  min-height: 19rem;
+}
+
+.last-service {
+  min-height: auto;
+}
+
 
 .single-service:hover {
   -webkit-transition: all 0.3s ease-out 0s;
